@@ -18,6 +18,7 @@ const ButtonFactory = ({
   name,
   ariaName,
   href,
+  linkProps,
   ...props
 }) => (
   <Link
@@ -28,6 +29,7 @@ const ButtonFactory = ({
     rel="noreferrer noopener"
     aria-label={`Share on ${ariaName || name}`}
     title={`Share on ${ariaName || name}`}
+    {...linkProps}
   >
     {simple || simpleReverse ? (
       <IconFill {...props} />
