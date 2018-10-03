@@ -11,7 +11,7 @@ export const SharingButton = styled.div`
 export const Link = styled.a`
   text-decoration: none;
   color: #fff;
-  margin: 0.5em;
+  margin: 0;
   display: inline-block;
 
   svg {
